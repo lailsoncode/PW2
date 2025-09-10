@@ -1,27 +1,44 @@
 import './App.css';
+// import Conteudo from './componentes/Conteudo';
+import Card from './componentes/Card';
+import Tasks from './componentes/Tasks';
 
+// UNI 01 - Exercício Componentes
+// function App() {
+//   return (
+//     <div className="App">
+//       <Card
+//         titulo="Título do Card"
+//         descricao="Descrição do Card"
+//       />
+//       <Card
+//       titulo="Título do Card 2"
+//       descricao="Descrição do Card 2"
+//       />
+
+//     </div>
+//   );
+// }
+
+//UNI 01 - Atv. Componentes + Props
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
+      <Tasks
+        titulo="Atv. Exercicio Componente"
+        responsavel="Lailson Herondino"
+        concluida={false}
+      />
+      <Tasks
+        titulo="Atv. Componentes + Props"
+        responsavel="Lailson Herondino"
+        concluida={true}
+      />
+      <Tasks
+        titulo="Revisar Atv 01"
+        responsavel="Lailson Herondino"
+        concluida={false}
+        />
     </div>
   );
 }
